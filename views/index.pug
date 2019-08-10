@@ -1,0 +1,15 @@
+head
+        title barknbite
+        link(rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css')
+
+body
+     h1 #{title}
+         ul.list-group
+            each article, i in articles
+              li.list-group-item=  article.author
+
+     br
+     hr
+     footer
+           p  copyright &copy 2019
+                     
